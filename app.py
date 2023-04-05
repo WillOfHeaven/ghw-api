@@ -23,6 +23,7 @@ def hello_world():
     return "<p>Hello, World! Will of Heaven here !</p>"
 
 
+@app.route('/gethackathon', methods=['GET'])
 @app.route('/hackathons', methods=['GET', 'POST'])
 def getHackathons():
     if request.method == 'POST':
